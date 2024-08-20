@@ -116,10 +116,17 @@ h1{
 }
 .serve {
   text-align: center;
-  align-content: center;
   font-size: larger;
+  padding-top: 82px;
   width: 50%;
-  color: rgb(252, 43, 154);
+}
+.design1{
+  margin-top: 130px;
+  font-size: small;
+  text-decoration: overline;
+}
+.design2{
+  font-size: small;
 }
 .services ul li {
   height: 50px;
@@ -138,13 +145,13 @@ h1{
 
 .box {
   width: 185px;
-  height: 80px;
+  height: 120px;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
   border-style: none; 
   background-color: lightblue;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: rgb(0, 0, 0);
   border-radius: 10px;
   font-size: 18px;
@@ -197,12 +204,6 @@ width: 35%;
   font-size: 25px;
   color: white;
 }
-#awards{
-  height: 39pc;
-
-  color: white;
-  background-color:rgb(95, 53, 203);
-}
 .text{
 font-size: 35px;
 padding-left: 180px;
@@ -219,10 +220,10 @@ padding-left: 180px;
   color: white;
   background-color:rgb(95, 53, 203);
  }
- .logos{
-justify-content: space-around;
-  align-content: center ;
-  padding-left: 150px;
+ .logos2{
+  align-self: center;
+ padding-left: 200px;  
+
  }
  #mind{
   height: 22pc;
@@ -249,12 +250,12 @@ justify-content: space-around;
  background: transparent;
 }
 #fbtn{
-  margin-left: 52px;
-   width: 120px;
-    background-color:rgb(255, 137, 239);
-    border-radius: 10px;
-    height: 28px;
-    margin-top:5px;
+ 
+  width: 170px;
+  background-color:rgb(233, 233, 233);
+  border-radius: 7px;
+  height: 40px;
+  margin-top:9px;
 }
 
 @media screen and (max-width:600px)
@@ -289,5 +290,102 @@ margin-left: 150px;
  width: 265%;
  justify-content: center;
 }
+
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.image-section {
+  height: 110vh;
+  display: flex;
+  background-color:rgb(95, 53, 203) ;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.image-container p {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+.pdiv{
+  width: 70%;
+  align-self: center;
+}
+button {
+  --color: rgb(95, 53, 203);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em; 
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #3a0ca3;
 
 }
