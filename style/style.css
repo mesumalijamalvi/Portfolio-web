@@ -341,11 +341,16 @@ display: none;
   }
  .details{
   width: 100%;
+  font-size: 12px;
  }
  #sec3{
   width: 100%;
   flex-direction: column;
   
+ }
+ .box{
+  height: 35px;
+  border-radius: 0px;
  }
  .serve{
  align-self: center;
@@ -355,7 +360,7 @@ display: none;
  }
  #pros{
  width: 100%;
- padding-top: 480px;
+ padding-top: 150px;
 }
 .makeup{
   display: none;
@@ -369,7 +374,7 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
+  height: %;
 }
 
 .image-section {
