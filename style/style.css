@@ -75,14 +75,14 @@ nav ul li a:hover {
   color:rgb(95, 53, 203);
 }
 .dadi1 {
-  width: 40%;
+  width: 50%;
   align-content: center;
   font-size: larger;
-  padding-left: 140px;
+  padding-left: 165px; 
 }
 .dadiv2 {
   margin-top: 10px;
-  width: 40%;
+  width: 50%;
   text-align: center;
   border-radius: 100%;
 }
@@ -155,6 +155,8 @@ h1{
   color: rgb(0, 0, 0);
   border-radius: 10px;
   font-size: 18px;
+  box-shadow: 5px 5px rgb(100, 100, 100);
+
 }
 
 .box:hover {
@@ -177,15 +179,18 @@ h1{
   padding-left: 50px;
 }
 #cfeedback{
-margin-top: 100px;
-
-
+  margin: 40px;
+align-content: center;
+align-self: center;
+}
+.feed{
+  justify-content: center;
+  align-content: center;
 }
 .grace{
 display: flex; 
-margin-top: 40px;
+margin-bottom: 40px;
 height: 45vh;
-margin-left: 480px;
 border-radius: 20px;
 background-color: rgb(106, 210, 251);
 width: 35%;
@@ -224,10 +229,51 @@ padding-left: 180px;
   align-self: center;
  padding-left: 200px;  
 
+}
+#blog-site{
+  background-color:rgb(95, 53, 203) ;
+}
+ .blog-dad{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+ .blog-child{
+  width: 70%;
+  max-width: 400px;
+  text-align: center;
+  color: white;  
  }
+ .cover-pic{
+  display: block;
+  width: 100%;
+}
+.profile-pic{
+  width: 140px;
+  margin-top: -100px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px deeppink;
+  background-color: white;
+
+}
+.read-btn{
+ display: inline-block;
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+ background-color: white;
+ border: 2px solid #ffffff;
+ padding: 6px 35px ;
+ margin:25px 0px ;
+}
+#FAQ{
+  height: 50vh;
+  background-color: white;
+}
  #mind{
   height: 22pc;
-  
   text-align: center;
   align-content: center;
  }
@@ -257,38 +303,65 @@ padding-left: 180px;
   height: 40px;
   margin-top:9px;
 }
+.fa-brands{
+  color:rgb(110, 20, 255);
+  font-size: 24px;
+  margin-right: 180px;
+}
+.fa-bullseye{
+  font-size: 80px;
+  color:rgb(255, 255, 255);
 
-@media screen and (max-width:600px)
+}
+@media screen and (max-width:640px)
 {
+  body{
+    width: 100%;
+  }
  header{
-  width: 265%;
+  width: 100%;
+ }
+ header nav{
+  display: none;
  }
  h1{
   display: flex;
-  font-size: 50px;
+  font-size: 18px;
 }
 #capcut{
-height: 500px;
-width: auto;
-margin-left: 150px;
+display: none;
 }
 #sec2{
-   height: 450px;
-   width: 265%;
+   height: 350px;
+   width: 100%;
    
   }
   .aboutme{
     width: 100%;
   }
  .details{
-  width: 260%;
+  width: 100%;
  }
  #sec3{
-  width: 265%;
+  width: 100%;
+  flex-direction: column;
+  
+ }
+ .serve{
+ align-self: center;
+ }
+ .para9{
+  display: none;
  }
  #pros{
- width: 265%;
- justify-content: center;
+ width: 100%;
+ padding-top: 480px;
+}
+.makeup{
+  display: none;
+}
+.box{
+  width: 170px;
 }
 
 }
