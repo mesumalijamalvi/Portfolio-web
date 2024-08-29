@@ -110,7 +110,7 @@ h1{
  
 }
 .details {
-  width: 50%;
+  width: 60%;
   color: white;
   font-size: larger;
 }
@@ -145,7 +145,7 @@ h1{
 
 .box {
   width: 185px;
-  height: 120px;
+  height: 180px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -313,43 +313,12 @@ padding-left: 180px;
   color:rgb(255, 255, 255);
 
 }
-@media screen and (max-width:640px)
-{
-  body{
-    width: 100%;
-  }
- header{
-  width: 100%;
- }
- header nav{
-  display: none;
- }
- h1{
-  display: flex;
-  font-size: 18px;
+.mob-menu{
+  font-size: 30px;
+  color: white;
 }
-#capcut{
-display: none;
-}
-#sec2{
-   height: 350px;
-   width: 100%;
-   
-  }
-  .aboutme{
-    width: 100%;
-  }
- .details{
-  width: 100%;
-  font-size: 12px;
- }
- #sec3{
-  width: 100%;
-  flex-direction: column;
-  
- }
  .box{
-  height: 35px;
+  height: 50px;
   border-radius: 0px;
  }
  .serve{
@@ -358,23 +327,18 @@ display: none;
  .para9{
   display: none;
  }
- #pros{
+ #{
  width: 100%;
  padding-top: 150px;
 }
-.makeup{
-  display: none;
-}
 .box{
   width: 170px;
-}
-
 }
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: %;
+  height: 100%;
 }
 
 .image-section {
@@ -467,3 +431,80 @@ button:active:before {
   background: #3a0ca3;
 
 }
+.mob-menu{
+  display: none;
+}
+ @media (min-width:360px) and (max-width:767px)
+{
+  body{
+    width: 110%;
+  }
+ header{
+  width: 215%;
+ }
+ header nav ul li{
+  display: none;
+ }
+ h1{
+  display: flex;
+  font-size: 35px;
+}
+#capcut{
+display: none;
+}
+.fa-brands{
+  display: none;
+}
+.dadi1{
+  gap: 20px;
+}
+.dadi1 p{
+  font-size: 25px;
+}
+.bts{
+  display: none;
+}
+#sec2{
+   height: 350px;
+   width: 215%;
+   
+  }
+  .aboutme{
+    width: 100%;
+  }
+  #pros{
+    width: 215%;
+   
+  }
+ .details{
+  width: 100%;
+  font-size: 12px;
+ }
+ #sec3{
+  width: 215%;
+  flex-direction: column;
+  
+ }
+ #cfeedback{
+  width: 50%;
+ }
+ .grace{
+  height: 55vh;
+ }
+ .pdiv{
+  height: 160%;
+  flex-direction: row;
+ }
+ .pdiv p{
+  font-size: 18px;
+ }
+ .image-section{
+  height: 200vh;
+}
+#packages{
+  width: 120%;
+}
+.makeup{
+  display: none;
+}
+} 
