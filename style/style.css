@@ -1,5 +1,7 @@
 body{
   font-family: "Gill Sans", "Gill Sans MT","Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -14,15 +16,13 @@ header {
 
 .container {
   width: 90%;
-  height: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
   font-size: 26px;
+  padding-left:20px ;
   font-weight: bold;
   color: #ffffff;
 }
@@ -74,15 +74,21 @@ nav ul li a:hover {
 .bts{
   color:rgb(95, 53, 203);
 }
+.forsec{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 .dadi1 {
-  width: 50%;
   align-content: center;
   font-size: larger;
-  padding-left: 165px; 
+  
 }
 .dadiv2 {
   margin-top: 10px;
-  width: 50%;
   text-align: center;
   border-radius: 100%;
 }
@@ -95,8 +101,12 @@ h1{
    width: auto;
    border-radius: 100%"
 }
+.dadi3{
+  align-content: center;
+}
 .dadi3 ul{
-  margin-top: 450px;
+  list-style: none;
+
   flex-direction: column;
 }
 .dots{
@@ -138,24 +148,23 @@ h1{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding-top: 80px;
-  height: 300px;
+  margin-top: 50px;
+  
   justify-content: center;
 }
 
 .box {
-  width: 185px;
-  height: 180px;
+  width: 20px;
+  height: 90px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   border-style: none; 
   background-color: lightblue;
-  display: flex;
-  color: rgb(0, 0, 0);
   border-radius: 10px;
+  color: rgb(0, 0, 0);
   font-size: 18px;
-  box-shadow: 5px 5px rgb(100, 100, 100);
+  box-shadow: 5px 5px rgb(163, 127, 252);
 
 }
 
@@ -173,42 +182,35 @@ h1{
   justify-content: center;
   
 }
-.latestpro{
-  width:85%;
-  height: 34pc;
-  padding-left: 50px;
-}
-#cfeedback{
-  margin: 40px;
-align-content: center;
-align-self: center;
-}
-.feed{
-  justify-content: center;
-  align-content: center;
-}
-.grace{
-display: flex; 
-margin-bottom: 40px;
-height: 45vh;
-border-radius: 20px;
-background-color: rgb(106, 210, 251);
-width: 35%;
-}
-.opnion{
-  align-self: center;
-  padding-left: 20px
-}
-
 .promax{
-  padding-top: 50px; 
-  height: 30pc;
+  align-items: center;
   display: flex;
   border-radius: 20px;
   background-color: rgb(95, 53, 203);
   font-size: 25px;
   color: white;
 }
+.latestpro{
+  width:85%;
+
+  padding-left: 50px;
+}
+
+.grace{
+display: flex;
+background-color: lightskyblue;
+align-content: center;
+}
+.girl img{
+  height:350px;
+ 
+}
+.opnion{
+ align-self: center;
+ padding-left: 20px;
+}
+
+
 .text{
 font-size: 35px;
 padding-left: 180px;
@@ -304,7 +306,8 @@ padding-left: 180px;
   margin-top:9px;
 }
 .fa-brands{
-  color:rgb(110, 20, 255);
+  list-style: none;
+  color:rgb(109, 19, 255);
   font-size: 24px;
   margin-right: 180px;
 }
@@ -315,22 +318,16 @@ padding-left: 180px;
 }
 .mob-menu{
   font-size: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
- .box{
-  height: 50px;
-  border-radius: 0px;
- }
+
  .serve{
  align-self: center;
  }
  .para9{
   display: none;
  }
- #{
- width: 100%;
- padding-top: 150px;
-}
+
 .box{
   width: 170px;
 }
@@ -421,7 +418,9 @@ button:before {
   left: 100%;
   transition: all 0.7s;
 }
-
+.h1{
+  display: none;
+}
 button:hover:before {
   top: -30px;
   left: -30px;
@@ -434,77 +433,153 @@ button:active:before {
 .mob-menu{
   display: none;
 }
- @media (min-width:360px) and (max-width:767px)
-{
-  body{
-    width: 110%;
+.head9{
+  font-size: 35px
+}
+
+/* mobile responsiveness */
+
+@media (min-width:360px)  and (max-width:767px){
+  /* header here */
+  .nav-links{
+    display: none;
   }
- header{
-  width: 215%;
- }
- header nav ul li{
-  display: none;
- }
- h1{
-  display: flex;
-  font-size: 35px;
-}
-#capcut{
-display: none;
-}
-.fa-brands{
-  display: none;
-}
-.dadi1{
-  gap: 20px;
-}
-.dadi1 p{
-  font-size: 25px;
-}
-.bts{
-  display: none;
-}
-#sec2{
-   height: 350px;
-   width: 215%;
-   
+  .mob-menu{
+    display: block;
+    color: white;
+    justify-content: space-around;
   }
-  .aboutme{
-    width: 100%;
+  /* hero-section here */
+  .dadi1{
+    text-align: center;
+  }
+  .dadiv2{
+    display: none;
+  }
+  .dadi3{
+  display: none;
+  }
+  
+  .forsec{
+    justify-content: center;
+  }
+  .dadi1 h1{
+    font-size: 30px;
+  }
+  #sec2{
+    margin-top: 18px;
+  }
+  .dots{
+    display: flex;
+    flex-direction: column;
+    align-content:end;
+    size: 10px;
+  }
+  .fa-bullseye{
+    font-size: 40px;
+    
+  }
+  #get{
+    font-size: 15px;
+  }
+  .details heading{
+    font-size: 11px;
+  }
+  #sec3{
+    display: flex;
+    flex-direction: column;
+
+    & .box{
+      height: 40px;
+      width: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  }
+  .bold{
+    font-size: 15px;
+  }
+  .makeup{
+    display: none;
   }
   #pros{
-    width: 215%;
-   
+    margin-top: 120px;
+    & heading{
+      font-size: 18px;
+    }
   }
- .details{
-  width: 100%;
-  font-size: 12px;
- }
- #sec3{
-  width: 215%;
-  flex-direction: column;
-  
- }
- #cfeedback{
-  width: 50%;
- }
- .grace{
-  height: 55vh;
- }
- .pdiv{
-  height: 160%;
-  flex-direction: row;
- }
- .pdiv p{
-  font-size: 18px;
- }
- .image-section{
-  height: 200vh;
+  .girl{
+    display: none;
+  }
+  .image-section{
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+
+  }
+  .pdiv{
+    & img{
+      display: none;
+    }
+  }
 }
-#packages{
-  width: 120%;
-}
-.makeup{
+
+/* Tablet responsiveness starts here */
+
+@media (min-width:768px) and (max-width:1024px) {
+  .nav-links{
+    display: none;
+  }
+  .mob-menu{
+    display: block;
+    color: white;
+    justify-content: space-around;
+  }
+  /* hero-section here */
+  .dadi1{
+    text-align: center;
+  }
+  .dadi3{
   display: none;
+  }
+  
+  .forsec{
+    justify-content: center;
+  }
+  .dadi1 h1{
+    font-size: 32px;
+  } 
+  #cfeedback{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  #sec3{
+    display: flex;
+    flex-direction: column;
+
+    & .box{
+      height: 65px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  #pros{
+    margin-top: 50px;
+  }
+  .head9{
+    font-size: 12px;
+  }
+  .image-section{
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+
+  }
+  .pdiv{
+    
+  }
 }
-} 
